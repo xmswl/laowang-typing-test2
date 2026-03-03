@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老王的测试小工具 - 打字速度与准确率测试</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .typing-area { font-family: 'Courier New', monospace; font-size: 1.2rem; line-height: 1.6; }
+    .correct { color: #10b981; text-shadow: 0 0 5px rgba(16, 185, 129, 0.3); }
+    .incorrect { color: #ef4444; text-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
+    .current { background: linear-gradient(120deg, #8b5cf6, #06b6d4); -webkit-background-clip: text; color: transparent; }
+    .result-card { transition: all 0.3s ease; }
+    .result-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .btn-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .btn-primary:hover { filter: brightness(1.1); }
+    .progress-bar { height: 8px; border-radius: 4px; }
+    body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; padding: 2rem 0; }
+    .hidden { display: none; }
+    .typing-input { border: none; outline: none; background: transparent; font-family: inherit; font-size: inherit; width: 100%; }
+    .typing-input:focus { box-shadow: 0 0 0 2px
